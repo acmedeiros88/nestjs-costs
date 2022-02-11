@@ -1,34 +1,80 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Costs um gerenciador de projetos feito com Next.js
 
-## Getting Started
+<p align="justify">
+Costs é um projeto do [curso de React](https://www.youtube.com/playlist?list=PLnDvRpP8BneyVA0SZ2okm-QBojomniQVO) realizado através da plataforma do *YouTube* e administrado pelo professor Matheus Battisti. No curso o professor desenvolve o Costs utilizando o *React*, eu optei em desenvolver utilizando o *Next.js*.
+As funcionalidades deste projeto são:
+- Criar projeto e definir um *BUDGET* (valor total do projeto a ser criado);
+- Classificar o projeto por categoria (Infra, Desenvolvimento, Design e Planejamento);
+- Alocar serviços nos projetos já criados para ter o controle dos gastos realizados até o momento; 
+- Obter a informação do orçamento disponível para a conclusão do projeto.
+No *Back-End* (servidor) Costs simula uma API com o banco de dados utilizando [JSON-SERVER](https://www.npmjs.com/package/json-server).
+</p>
 
-First, run the development server:
+<br/>
+
+# Começando
+
+### Pré-requisitos
+
+Antes de começar, você vai precisar ter instalado em sua máquina as seguintes ferramentas:  
+* [Git](https://git-scm.com)
+* [Node.js](https://nodejs.org/en/).
+
+### Rodando a aplicação web (Front-End)
 
 ```bash
-npm run dev
-# or
-yarn dev
+# Abra um terminal do Git Bash onde será clonado o repositório do Costs
+
+# Exetute os comandos abaixo:
+
+# Clone este repositório;
+$ git clone https://github.com/acmedeiros88/nextjs-costs.git
+
+# Acesse a pasta do projeto;
+$ cd nextjs-costs
+
+# Instale as dependências;
+$ npm i
+
+# Execute a aplicação;
+$ npm run dev
+
+# O servidor iniciará na porta:3000 - acesse <http://localhost:3000>. 
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+### Rodando o Back-End (servidor)
 
-You can start editing the page by modifying `pages/index.js`. The page auto-updates as you edit the file.
+```bash
+# Abra outro terminal do Git Bash na pasta onde foi clonado o repositório do Costs;
 
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.js`.
+# Exetute os comandos abaixo:
 
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
+# Execute o servidor do JSON-SERVER;
+$ npm run backend
 
-## Learn More
+# O servidor iniciará na porta:5000 - acesse <http://localhost:5000/projects>.
+```
+### API Projetos
 
-To learn more about Next.js, take a look at the following resources:
+#### Listar todos os projetos
+```
+GET /projects
+```
+#### Listar todas as categorias
+```
+GET /categories
+```
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+### Tecnologias
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+As seguintes ferramentas foram utilizadas na construção deste projeto:
 
-## Deploy on Vercel
+* [Node.js v16 LTS (v16.13.2)](https://nodejs.org/download/release/v16.13.2/);
+* [React Icons (v4.3.1)](https://react-icons.github.io/react-icons/);
+* [uuid (v8.3.2)](https://www.npmjs.com/package/uuid);
+* [json-server (v0.17.0)](https://www.npmjs.com/package/json-server).
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+### Curso de React
+ 
+**Disponível em:** <https://www.youtube.com/playlist?list=PLnDvRpP8BneyVA0SZ2okm-QBojomniQVO>
+**Acesso em:** fev. 2022

@@ -1,0 +1,70 @@
+{
+  "projects": [
+    {
+      "name": "Projeto ABC",
+      "budget": "15000",
+      "category": {
+        "id": "3",
+        "name": "Design"
+      },
+      "cost": 10600,
+      "services": [
+        {
+          "name": "Serviço 1",
+          "cost": "1000",
+          "description": "teste 1",
+          "id": "391fb885-5de8-4c73-b6da-670f19b259b1"
+        },
+        {
+          "name": "Serviço 2",
+          "cost": "500",
+          "description": "Teste",
+          "id": "46a3e04e-4c32-4c99-930c-c8985aa5f6a8"
+        },
+        {
+          "name": "Serviço 3",
+          "cost": "10000",
+          "description": "Testes",
+          "id": "589c7bc4-d80b-410f-9dbc-69d61266d068"
+        }
+      ],
+      "id": 2
+    },
+    {
+      "name": "Projeto DEF",
+      "budget": "20000",
+      "category": {
+        "id": "2",
+        "name": "Desenvolvimento"
+      },
+      "cost": 1999,
+      "services": [
+        {
+          "name": "Contratar DEV NextJS",
+          "cost": "1999",
+          "description": "Desenvolver aplicação web",
+          "id": "db523d3e-1ab0-4d20-b2c2-c6e8f8af6823"
+        }
+      ],
+      "id": 3
+    }
+  ],
+  "categories": [
+    {
+      "id": 1,
+      "name": "infra"
+    },
+    {
+      "id": 2,
+      "name": "Desenvolvimento"
+    },
+    {
+      "id": 3,
+      "name": "Design"
+    },
+    {
+      "id": 4,
+      "name": "Planejamento"
+    }
+  ]
+}
