@@ -2,11 +2,15 @@
 
 <p align="justify">
 Costs é um projeto do <a href="https://www.youtube.com/playlist?list=PLnDvRpP8BneyVA0SZ2okm-QBojomniQVO" style="text-decoration:none">Curso de React</a> realizado através da plataforma do <i>YouTube</i> e administrado pelo professor Matheus Battisti. No curso o professor desenvolve o Costs utilizando o <i>React</i>, eu optei em desenvolver utilizando o <i>Next.js</i>.
+</p>
+<p align="justify">
 As funcionalidades deste projeto são:
-- Criar projeto e definir um <i>BUDGET</i> (valor total do projeto a ser criado);
-- Classificar o projeto por categoria (Infra, Desenvolvimento, Design e Planejamento);
-- Alocar serviços nos projetos já criados para ter o controle dos gastos realizados até o momento; 
-- Obter a informação do orçamento disponível para a conclusão do projeto.
+<ul>
+ <li>Criar projeto e definir um <i>BUDGET</i> (valor total do projeto a ser criado);</li>
+ <li>Classificar o projeto por categoria (Infra, Desenvolvimento, Design e Planejamento);</li>
+ <li>Alocar serviços nos projetos já criados para ter o controle dos gastos realizados até o momento;</li>
+ <li>Obter a informação do orçamento disponível para a conclusão do projeto.</li>
+</ul>
 No <i>Back-End</i> (servidor) Costs simula uma API com o banco de dados utilizando <a href="https://www.npmjs.com/package/json-server" style="text-decoration:none">JSON-SERVER</a>.
 </p>
 
@@ -18,7 +22,7 @@ No <i>Back-End</i> (servidor) Costs simula uma API com o banco de dados utilizan
 
 Antes de começar, você vai precisar ter instalado em sua máquina as seguintes ferramentas:  
 * [Git](https://git-scm.com)
-* [Node.js](https://nodejs.org/en/).
+* [Node.js](https://nodejs.org/en/)
 
 ### Rodando a aplicação web (Front-End)
 
@@ -45,7 +49,7 @@ $ npm run dev
 ### Rodando o Back-End (servidor)
 
 ```bash
-# Abra outro terminal do Git Bash na pasta onde foi clonado o repositório do Costs;
+# Abra outro terminal do Git Bash na pasta onde foi clonado o repositório do Costs
 
 # Exetute os comandos abaixo:
 
@@ -76,5 +80,5 @@ As seguintes ferramentas foram utilizadas na construção deste projeto:
 
 ### Curso de React
  
-**Disponível em:** <https://www.youtube.com/playlist?list=PLnDvRpP8BneyVA0SZ2okm-QBojomniQVO>
+**Disponível em:** <https://www.youtube.com/playlist?list=PLnDvRpP8BneyVA0SZ2okm-QBojomniQVO>, 
 **Acesso em:** fev. 2022
