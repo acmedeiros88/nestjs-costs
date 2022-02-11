@@ -80,6 +80,6 @@ As seguintes ferramentas foram utilizadas na construção deste projeto:
 
 ### Curso de React
  
-**Disponível em:** <a style="text-decoration:none" target="_blank"><b><</b>https://www.youtube.com/playlist?list=PLnDvRpP8BneyVA0SZ2okm-QBojomniQVO<b>></b></a>
+**Disponível em:** <a href="https://www.youtube.com/playlist?list=PLnDvRpP8BneyVA0SZ2okm-QBojomniQVO" style="text-decoration:none" target="_blank"><b><</b>youtube.com/playlist?list=PLnDvRpP8BneyVA0SZ2okm-QBojomniQVO<b>></b></a>
 <br/> 
 **Acesso em:** fev. 2022
