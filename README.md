@@ -1,7 +1,7 @@
 # Costs um gerenciador de projetos feito com Next.js
 
 <p align="justify">
-Costs é um projeto do <a href="https://www.youtube.com/playlist?list=PLnDvRpP8BneyVA0SZ2okm-QBojomniQVO" style="text-decoration:none">Curso de React</a> realizado através da plataforma do <i>YouTube</i> e administrado pelo professor Matheus Battisti. No curso o professor desenvolve o Costs utilizando o <i>React</i>, eu optei em desenvolver utilizando o <i>Next.js</i>.
+Costs é um projeto do <a href="https://www.youtube.com/playlist?list=PLnDvRpP8BneyVA0SZ2okm-QBojomniQVO" style="text-decoration:none" target="_blank">Curso de React</a> realizado através da plataforma do <i>YouTube</i> e administrado pelo professor Matheus Battisti. No curso o professor desenvolve o Costs utilizando o <i>React</i>, eu optei em desenvolver utilizando o <i>Next.js</i>.
 </p>
 <p align="justify">
 As funcionalidades deste projeto são:
@@ -11,7 +11,7 @@ As funcionalidades deste projeto são:
  <li>Alocar serviços nos projetos já criados para ter o controle dos gastos realizados até o momento;</li>
  <li>Obter a informação do orçamento disponível para a conclusão do projeto.</li>
 </ul>
-No <i>Back-End</i> (servidor) Costs simula uma API com o banco de dados utilizando <a href="https://www.npmjs.com/package/json-server" style="text-decoration:none">JSON-SERVER</a>.
+No <i>Back-End</i> (servidor) Costs simula uma API com o banco de dados utilizando <a href="https://www.npmjs.com/package/json-server" style="text-decoration:none" target="_blank">JSON-SERVER</a>.
 </p>
 
 <br/>
@@ -80,5 +80,6 @@ As seguintes ferramentas foram utilizadas na construção deste projeto:
 
 ### Curso de React
  
-**Disponível em:** <https://www.youtube.com/playlist?list=PLnDvRpP8BneyVA0SZ2okm-QBojomniQVO>, 
+**Disponível em:** <a style="text-decoration:none" target="_blank"><b><</b>https://www.youtube.com/playlist?list=PLnDvRpP8BneyVA0SZ2okm-QBojomniQVO<b>></b></a>
+<br/> 
 **Acesso em:** fev. 2022
