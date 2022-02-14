@@ -1,52 +1,75 @@
 {
   "projects": [
     {
-      "name": "Projeto ABC",
-      "budget": "15000",
+      "name": "Projeto teste",
+      "budget": "31000",
+      "category": {
+        "id": "4",
+        "name": "Planejamento"
+      },
+      "cost": 2200,
+      "services": [
+        {
+          "name": "Teste 01",
+          "cost": "1000",
+          "description": "testes",
+          "id": "76907681-bb20-4087-8c04-afd86e624d9e"
+        },
+        {
+          "name": "Teste 2",
+          "cost": "1200",
+          "description": "Testes",
+          "id": "7755c104-db8c-4fd4-a6cc-1d8b189ce9e6"
+        }
+      ],
+      "id": 4
+    },
+    {
+      "name": "Projeto 01",
+      "budget": "10000",
       "category": {
         "id": "3",
         "name": "Design"
       },
-      "cost": 10600,
+      "cost": 500,
       "services": [
         {
-          "name": "Serviço 1",
-          "cost": "1000",
-          "description": "teste 1",
-          "id": "391fb885-5de8-4c73-b6da-670f19b259b1"
-        },
-        {
-          "name": "Serviço 2",
+          "name": "Teste 03",
           "cost": "500",
-          "description": "Teste",
-          "id": "46a3e04e-4c32-4c99-930c-c8985aa5f6a8"
-        },
-        {
-          "name": "Serviço 3",
-          "cost": "10000",
-          "description": "Testes",
-          "id": "589c7bc4-d80b-410f-9dbc-69d61266d068"
+          "description": "teste",
+          "id": "90fa16b8-6ef2-416c-89c9-195b7e5dbd5b"
         }
       ],
-      "id": 2
+      "id": 5
     },
     {
-      "name": "Projeto DEF",
-      "budget": "20000",
+      "name": "Projeto 02",
+      "budget": "1500",
+      "category": {
+        "id": "1",
+        "name": "infra"
+      },
+      "cost": 250,
+      "services": [
+        {
+          "name": "Teste 04",
+          "cost": "250",
+          "description": "Teste",
+          "id": "35450e4b-c53b-40c8-98aa-4b7f170cc23d"
+        }
+      ],
+      "id": 6
+    },
+    {
+      "name": "Projeto 03",
       "category": {
         "id": "2",
         "name": "Desenvolvimento"
       },
-      "cost": 1999,
-      "services": [
-        {
-          "name": "Contratar DEV NextJS",
-          "cost": "1999",
-          "description": "Desenvolver aplicação web",
-          "id": "db523d3e-1ab0-4d20-b2c2-c6e8f8af6823"
-        }
-      ],
-      "id": 3
+      "budget": "10550",
+      "cost": 0,
+      "services": [],
+      "id": 7
     }
   ],
   "categories": [

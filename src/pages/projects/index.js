@@ -6,10 +6,20 @@ import ProjectCard from '../../components/project/ProjectCard'
 import Loading from '../../components/layout/Loading'
 import { useState, useEffect } from 'react'
 
-export default function Projects() {
+
+export async function getStaticProps() {
+    const response = await fetch('http://localhost:5000/projects')
+    const allProjects = await response.json()
+    
+    return {
+        props: { allProjects }
+    }
+}
+
+export default function Projects({ allProjects }) {
     const router = useRouter()
-    const [projects, setProjects] = useState([])
-    const [removeLoading, setRemoveLoading] = useState(false)
+    const [projects, setProjects] = useState(allProjects)
+    const [removeLoading, setRemoveLoading] = useState(true)
     const [projectMessage, setProjectMessage] = useState('')
 
     let msn = ''
@@ -22,20 +32,6 @@ export default function Projects() {
                 router.push('/projects')
             }, 3000)
         }
-    }, [])
-
-    useEffect(() => {
-        fetch('http://localhost:5000/projects', {
-            method: 'GET',
-            headers: {
-                'Content-Type': 'application/json',
-            },
-        }).then(resp => resp.json())
-            .then(data => {
-                setProjects(data)
-                setRemoveLoading(true)
-            })
-            .catch((err) => console.log(err))
     }, [])
 
     function removeProject(id) {

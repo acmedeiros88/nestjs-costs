@@ -9,31 +9,36 @@ import ServiceForm from '../../components/service/ServiceForm'
 import ServiceCard from '../../components/service/ServiceCard'
 import Message from '../../components/layout/Message'
 
-export default function Project() {
+export async function getStaticPaths() {
+    const response = await fetch('http://localhost:5000/projects/')
+    const allProjects = await response.json()
+
+    const paths = allProjects.map((project) => ({
+        params: { id: `${project.id}` }
+    }))
+    
+    return { paths, fallback: false }
+}   
+
+export async function getStaticProps({ params }) {
+    const response = await fetch(`http://localhost:5000/projects/${params.id}`)
+    const allProjects = await response.json()
+
+    return {
+        props: { allProjects }
+    }
+}
+
+export default function Project({ allProjects }) {
     const router = useRouter()
-    const id = router.query.id
-    const [project, setProject] = useState([])
-    const [services, setServices] = useState([])
+    //const id = router.query.id
+    const [project, setProject] = useState(allProjects)
+    const [services, setServices] = useState(allProjects.services)
     const [showProjectForm, setShowProjectForm] = useState(false)
     const [showServiceForm, setShowServiceForm] = useState(false)
     const [message, setMessage] = useState()
     const [type, setType] = useState()
-
-    useEffect(() => {
-        fetch(`http://localhost:5000/projects/${id}`, {
-            method: 'GET',
-            headers: {
-                'Content-Type': 'application/json',
-            },
-
-        }).then(resp => resp.json())
-            .then((data) => {
-                setProject(data)
-                setServices(data.services)
-            })
-            .catch(err => console.log(err))
-    }, [id])
-
+    
     function editPost(project) {
         setMessage('')
 
@@ -135,7 +140,7 @@ export default function Project() {
     function toggleServiceForm() {
         setShowServiceForm(!showServiceForm)
     }
-
+    
     return (
         <>
             {project.name ? (
